@@ -28,31 +28,30 @@ ul {
     align-items: center;
 }
 
-.contact__button {
+.button--contact {
     border: none;
     padding: 10px 20px;
 
     background-color: var(--clr-beige);
 }
-.contact__button img {
+.dropdown__button img {
     width: 8px;
 }
 
-.contact__dropdown {
+.contact__dropdown, .main__dropdown {
     display: inline-block;
     position: relative;
 }
 
-.contact__dropdown__content {
+.dropdown__content {
     display: none;
-    position: absolute;
-
+    
     padding: 10px 20px;
     z-index: 1;
 
     background-color: var(--clr-beige);
 }
-.contact__dropdown__content.is-active--contact{
+.dropdown__content.is-active{
     display: block;
 }
 
@@ -95,4 +94,41 @@ ul {
     padding: 6rem 0;
     background-size: cover;
     background-position-x: center;
+}
+
+.l-nav-main{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    background-color: var(--clr-cyan);
+}
+
+.button--main {
+    border: 2px solid var(--clr-cyan);
+    padding: 10px 24px;
+
+    background-color: white;
+
+    color: var(--clr-cyan);
+}
+
+.dropdown__content--main {
+    padding: 0;
+    position: absolute;
+}
+
+.nav-main a {
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    color: var(--clr-cyan);
+    background-color: white;
+    padding: 8px 13px;
+    border: 2px solid var(--clr-cyan);
+}
+
+.nav-main a:hover {
+    background-color: var(--clr-cyan);
+    color: white;
 }
