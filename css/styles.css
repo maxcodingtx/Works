@@ -19,6 +19,7 @@ ul {
 
 .nav-contact {
     padding: 10px;
+
     background-color: var(--clr-white);
 }
 .l-nav-contact {
@@ -28,40 +29,42 @@ ul {
 }
 
 .contact__button {
-    padding: 10px 20px;
     border: none;
+    padding: 10px 20px;
+
     background-color: var(--clr-beige);
 }
-
-
 .contact__button img {
     width: 8px;
 }
 
 .contact__dropdown {
-    position: relative;
     display: inline-block;
+    position: relative;
 }
 
 .contact__dropdown__content {
     display: none;
     position: absolute;
+
     padding: 10px 20px;
-    
     z-index: 1;
+
     background-color: var(--clr-beige);
 }
-
 .contact__dropdown__content.is-active--contact{
     display: block;
 }
 
 .contact__link {
-    text-decoration: none;
     display: flex;
+
     gap: 20px;
-    color: var(--clr-cyan);
     margin: 10px 0;
+
+    text-decoration: none;
+
+    color: var(--clr-cyan);
 }
 
 .contact__link:visited {
@@ -69,9 +72,10 @@ ul {
 }
 
 .contact__link__logo {
-    background-image: url(/Works/img/contact-sprite.png);
     width: 24px;
-    height: 24px;
+    height: 24px;    
+
+    background-image: url(/Works/img/contact-sprite.png);
     background-size: cover;
 }
 .contact__link__logo--2 {
@@ -82,13 +86,4 @@ ul {
 }
 .contact__link__logo--4 {
     background-position-y: 100%;
-}
-
-
-
-.nav__language a {
-    color: black;
-    font-size: 18px;
-
-    margin: 0 12px 0 0;
 }
