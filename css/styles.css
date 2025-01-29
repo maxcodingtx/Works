@@ -1,3 +1,5 @@
+@import url(themes.css);
+@import url(animations.css);
 
 *, *::after, *::after{
     box-sizing: border-box;
@@ -5,4 +7,87 @@
 
 body {
     margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* header styles start here */
+
+.nav-contact {
+    padding: 10px;
+    background-color: var(--clr-white);
+}
+.l-nav-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--clr-beige);
+}
+
+
+.contact__button img {
+    width: 8px;
+}
+
+.contact__dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.contact__dropdown__content {
+    display: none;
+    position: absolute;
+    padding: 10px 20px;
+    
+    z-index: 1;
+    background-color: var(--clr-beige);
+}
+
+.contact__dropdown__content.is-active--contact{
+    display: block;
+}
+
+.contact__link {
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    color: var(--clr-cyan);
+    margin: 10px 0;
+}
+
+.contact__link:visited {
+    color: var(--clr-cyan);
+}
+
+.contact__link__logo {
+    background-image: url(/Works/img/contact-sprite.png);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+.contact__link__logo--2 {
+    background-position-y: 33.3%;
+}
+.contact__link__logo--3 {
+    background-position-y: 66.6%;
+}
+.contact__link__logo--4 {
+    background-position-y: 100%;
+}
+
+
+
+.nav__language a {
+    color: black;
+    font-size: 18px;
+
+    margin: 0 12px 0 0;
 }
