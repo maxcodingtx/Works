@@ -58,6 +58,7 @@ ul {
 
 .contact__link {
     display: flex;
+    align-items: center;
 
     gap: 20px;
     margin: 10px 0;
@@ -86,4 +87,12 @@ ul {
 }
 .contact__link__logo--4 {
     background-position-y: 100%;
+}
+
+
+.nav-banner {
+    background-image: url(/Works/img/Banner.png);
+    padding: 6rem 0;
+    background-size: cover;
+    background-position-x: center;
 }
