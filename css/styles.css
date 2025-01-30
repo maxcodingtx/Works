@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 90%;
+    margin: auto auto;
+}
+
 body,button {
     margin: 0;
     font-family: "Roboto", serif;
@@ -57,6 +62,7 @@ ul {
 
     .dropdown__content--main {
         transform: skew(-8deg);
+        margin-right: 8px;
     }
 
     .dropdown__content--main a {
@@ -178,4 +184,23 @@ ul {
 .nav-main a:hover {
     background-color: var(--clr-cyan);
     color: white;
+}
+
+/* main styles start here */
+
+main {
+    font-size: 24px;
+}
+
+.main__image {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main__image--2 {
+    width: 200px;
+    height: 266px;
+}
+@media (min-width: 600px) {
+    .main__image {
+        float: right;
+    }
 }
