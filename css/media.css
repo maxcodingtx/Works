@@ -1,0 +1,19 @@
+
+
+
+/* styles for slideshow start here */
+
+.l-facebook, .l-youtube {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    gap: 1%;
+}
+
+
+.facebook img, .youtube img{
+    width: 60%;
+}
