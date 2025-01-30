@@ -10,6 +10,10 @@
     margin: auto auto;
 }
 
+body {
+    background-color: var(--clr-beige);
+}
+
 body,button {
     margin: 0;
     font-family: "Roboto", serif;
@@ -192,8 +196,22 @@ main {
     font-size: 24px;
 }
 
+@media (min-width:1000px) {
+    main .container {
+        width: 60%;
+        margin: auto auto;
+        background-color: white;
+        padding: 1em;
+    }
+}
+
+main h4 {
+    color: var(--clr-cyan);
+}
+
 .main__image {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
 }
 .main__image--2 {
     width: 200px;
