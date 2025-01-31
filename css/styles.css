@@ -197,7 +197,9 @@ main {
 }
 
 @media (min-width:1000px) {
-    main .container {
+    main .container,
+    footer .container
+    {
         width: 60%;
         margin: auto auto;
         background-color: white;
