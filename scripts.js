@@ -3,8 +3,6 @@
 const contactButtonSelector = document.querySelectorAll('.dropdown__button');
 const contactDropdownContent = document.querySelectorAll('dropdown__content');
 
-// window event listener if both navs use same 'is-active' class
-
 
 contactButtonSelector.forEach((contactButtonSelector) => {
     contactButtonSelector.addEventListener('click', (event) => {
