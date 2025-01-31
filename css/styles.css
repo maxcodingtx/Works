@@ -215,7 +215,7 @@ main h4 {
 }
 .main__image--2 {
     width: 200px;
-    height: 266px;
+    height: 200px;
 }
 @media (min-width: 600px) {
     .main__image {
