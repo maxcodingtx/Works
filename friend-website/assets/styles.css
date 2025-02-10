@@ -45,5 +45,24 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    gap: 4px;
+}
+
+.images {
+    margin: 50px 0;
+}
+
+.images >* {
+    margin: 15px 0;
+}
+
+.nav-footer {
+    padding: 12px;
+}
+
+.nav-footer__random {
+    font-size: 24px;
+}
+
+.nav-footer >* {
+    margin: 24px 0;
 }
