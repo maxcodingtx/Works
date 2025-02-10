@@ -12,6 +12,12 @@ img {
     border: 2px solid black;
 } 
 
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .nav-main {
     padding: 12px;
 }
@@ -53,6 +59,14 @@ img {
 
 .images >* {
     margin: 15px 0;
+}
+
+img.rotate {
+    animation: rotate 8s linear infinite;
+}
+
+img.rotate--reverse {
+    animation: rotate 8s linear infinite reverse;
 }
 
 .nav-footer {
