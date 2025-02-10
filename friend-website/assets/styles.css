@@ -10,7 +10,7 @@ body {
 img {
     border-radius: 50%;
     border: 2px solid black;
-}
+} 
 
 .nav-main {
     padding: 12px;
@@ -39,4 +39,11 @@ img {
     color: white;
     background-color: black;
     padding: 4px;
+}
+
+.l-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 4px;
 }
