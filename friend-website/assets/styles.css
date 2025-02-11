@@ -66,7 +66,7 @@ img.rotate {
 }
 
 img.rotate--reverse {
-    animation: rotate 8s linear infinite reverse;
+    animation-direction: reverse;
 }
 
 .nav-footer {
