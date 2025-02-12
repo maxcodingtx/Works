@@ -48,3 +48,18 @@ unmuteButton.addEventListener('click', () => {
         audio.play();
     }
 });
+
+// assigning div with 'randomImageContainer' id to variable
+const randomImageContainer = document.getElementById('randomImageContainer');
+randomImageContainer.addEventListener('click', () => {
+    // generating random number
+    var randomInt = Math.ceil(Math.random()*4);
+    // attaching random number to 'randomImage'
+    var idSelector = `randomImage${randomInt}`;
+    // using 'idSelector' to select random <a></a> tag
+    var randomImageElement = document.getElementById(idSelector);
+    // getting the links to selected <a></a> tag
+    var randomImageLink = randomImageElement.href;
+    // opening link to selected <a></a> tag on new window
+    window.open(randomImageLink,'_blank');
+})
