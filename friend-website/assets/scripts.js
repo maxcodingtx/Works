@@ -62,4 +62,56 @@ randomImageContainer.addEventListener('click', () => {
     var randomImageLink = randomImageElement.href;
     // opening link to selected <a></a> tag on new window
     window.open(randomImageLink,'_blank');
-})
+});
+
+// iife which creates images in empty image grid tracks
+(() => {
+    // getting user screen width
+    const userWidth = document.documentElement.clientWidth;
+    // if user screen width is smaller than 800 then ignore rest of function
+    if (userWidth < 800) {
+        return;
+    };
+    // dividing screen width by 200 then rounding that number down
+    var columnAmount = Math.floor(userWidth/200);
+    // amount of rows in image grid
+    const rowAmount = 3;
+    // number of grid tracks
+    const numGridElements = rowAmount * columnAmount;
+    // assigning image container id to variable
+    var imageContainer = document.getElementById('imageContainer');
+    // setting amount of columns in image grid (determined by user screen width)
+    imageContainer.style.gridTemplateColumns = `repeat(${columnAmount}, 1fr)`;
+    // putting images already in image grid inside an array
+    var imageContainerChildren = [...imageContainer.children]
+    // number of images already in image grid
+    var imageContainerChildrenNum = imageContainerChildren.length
+    // html for new image to insert into image grid
+    const newImageHTML = `
+    <img src="/assets/img/profile-picture.jpg" alt="Profile Picture">
+    `;
+
+    if (userWidth >= 800) {
+        // for each empty track, insert new image
+        for (i=0;i<numGridElements-imageContainerChildrenNum;i++) {
+            imageContainer.insertAdjacentHTML('beforeend', newImageHTML)
+            // updating number of images in image container
+            imageContainerChildren = [...imageContainer.children]
+        };
+
+        /* for each image in image grid, set the rotate animation. 
+        alternate between the normal animation and the reverse animation
+        */
+        for (i=0; i<imageContainerChildren.length; i++){
+            if (i%2 == 0) {
+                imageContainerChildren[i].style.animation = `rotate 8s linear infinite`;
+            }
+            else {
+                imageContainerChildren[i].style.animation = `rotate 8s linear infinite reverse`;
+            };
+        };
+    };
+})();
+
+
+
