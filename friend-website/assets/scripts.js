@@ -9,15 +9,16 @@ for (let i=0;i<listeners.length;i++) {
     // creating eventListeners from each value in 'listeners' array
     window.addEventListener(listeners[i],function hasInteracted() {
         /* 
-        since this is a for loop the program will want to remove both eventlisteners
-        twice. This does not cause problems for the website but to save time I will 
-        have the function return early if the audio is playing (meaning that the website
-        has been interacted with).
+        since this is a for loop the program will want to execute the for loop
+        inside of this function twice (lines 22-24).
+        This does not cause problems for the website but to save time I will 
+        have the function return early if the audio is playing (meaning that the eventListeners
+        have already been deleted).
         */
         if (!audio.paused) {
             return;
         };
-        // deleting event listeners
+        // deleting event listeners once the website has been interacted with
         for (let i=0; i<listeners.length; i++) {
             window.removeEventListener(listeners[i],hasInteracted);
         };
