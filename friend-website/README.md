@@ -1,0 +1,4 @@
+
+#friend-website
+
+This website was made for a friend. Nothing out of the ordinary done for the HTML nor CSS. I however, in JS, decided to unnecessarily experiment with for loops along with deletion of eventListeners (lines 8-28). I also decided to experiment with audio and selecting random elements. Finally, I also decided to experiment with creating HTML and inserting said HTML along with grid manipulation (IIFE at lines 69-115).
